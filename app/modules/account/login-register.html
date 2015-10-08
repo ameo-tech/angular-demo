@@ -1,0 +1,42 @@
+﻿<!-- BLOCK "TYPE 18" -->
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-md-offset-3 wow fadeInUp">
+                <div class="form-block">
+                    <img class="img-circle form-icon" src="img/icon-118.png" alt="" />
+
+                    <div class="form-wrapper">
+                        <div class="row">
+
+                            <div class="block-header">
+                                <h2 class="title">Login Form</h2>
+                                <div class="text">Curabitur nunc neque, mollis viverra ex in, auctor elementum mi. Donec non purus felis. Duis interdum mi id purub</div>
+                            </div>
+                        </div>
+                        <form name="LoginForm" ng-submit="AccountHelper.Login()">
+                            <div class="field-entry">
+                                <label for="field-1">Email Address *</label>
+                                <input type="email" name="Email" required ng-model="LoginModel.Email" id="field-1" />
+                                
+                            </div>
+                            <div class="field-entry">
+                                <label for="field-2">Your Password *</label>
+                                <input type="password" name="Password" ng-model="LoginModel.Password" required id="field-2" />
+                                
+                            </div>
+                            <a class="simple-link" href="Javascript:"><span class="glyphicon glyphicon-chevron-right"></span>Forgot Password?</a><br />
+                            <a class="simple-link" href="#/registration"><span class="glyphicon glyphicon-chevron-right"></span>Register Now</a><br />
+                           
+                            <div class="button" busy="Logging You In.." busy-when-url="/api/user/login">Login<input  type="submit" value="Login" /></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+﻿<!-- BLOCK "TYPE 18" -->
+
+    <div class="container">
+        <div class="row">
+
+
+            <div class="clear"></div>
+
+            <div class="col-md-6 col-md-offset-3 wow fadeInUp">
+                <div class="form-block">
+                    <img class="img-circle form-icon" src="img/icon-119.png" alt="" />
+
+                    <div class="form-wrapper">
+                        <div class="row">
+                            <div class="block-header">
+                                <h2 class="title">Registration Form</h2>
+                                <div class="text">Curabitur nunc neque, mollis viverra ex in, auctor elementum mi. Donec non purus felis. Duis interdum mi id purub</div>
+                            </div>
+                        </div>
+                        <form name="RegistrationForm" ng-submit="AccountHelper.SignUp()">
+                            <div class="field-columns">
+                                <div class="column">
+                                    <div class="field-entry">
+                                        <label for="field-3">First Name *</label>
+                                        <input type="text" required ng-model="SignUpModel.FirstName" id="Text1" />
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="field-entry">
+                                        <label for="field-4">Last Name *</label>
+                                        <input type="text" required ng-model="SignUpModel.LastName" id="Text2" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field-entry">
+                                <label for="field-5">Email Address *</label>
+                                <input type="email" required ng-model="SignUpModel.Email" id="field-3" />
+                            </div>
+                            <div class="field-entry">
+                                <label for="field-6">Your Password *</label>
+                                <input type="password" required ng-model="SignUpModel.Password" id="field-4" />
+                            </div>
+                            <div class="field-entry">
+                                <label for="field-7">Repeat Password *</label>
+                                <input type="password" name="RepeatPasssword" compare-to="SignUpModel.Password" required ng-model="RepeatPasssword" id="field-5" />
+                                
+                            </div>
+                            <div class="checkbox-entry checkbox active">
+                                <input type="checkbox" checked ng-model="SignUpModel.RecieveNewsLetter">
+                                <label>I want to receive news and special offers</label>
+                                
+                            </div>
+                            <div class="checkbox-entry checkbox">
+                                <input type="checkbox" ng-model="SignUpModel.TermsAndConditions">  
+                                <label>I agree with the Terms and Conditions</label>
+                               
+                            </div>
+                            <div class="checkbox-entry radio active">
+                                <input type="radio" ng-model="SignUpModel.IsPrivateUser" name="radiobutton" value="true" checked>
+                                <label>I Am Private User</label>
+                               
+                            </div>
+                            <div class="checkbox-entry radio">
+                                <input type="radio" ng-model="SignUpModel.IsPrivateUser" value="false" name="radiobutton">
+                                <label>I Am Corporate User</label>
+                              
+                            </div>
+                            <div class="button" busy="Submitting...">Submit<input type="submit" value="" /></div>
+                         </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
